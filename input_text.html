@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケート入力フォーム</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ 
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #kekka {
+            display: none;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #kekka h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #kekka p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        #kekka .form-group {
+            margin-top: 20px;
+        }
+
+        #kekka button {
+            margin-top: 20px;
+        }
+        
+        .label{
+            text-align: center;
+        }
+        .form-group {
+            margin-bottom: 0.3rem;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 120px; /* ラベルの幅を調整 */
+            font-size: 14px;
+        }
+        button{
+            margin:0,auto}
+        .form-control {
+            display: inline-block;
+            width: calc(100% - 160px); /* フォームコントロールの幅を調整 */
+            vertical-align: top;
+        }
+        #surveyForm {
+            display: none; /* 最初は非表示 */
+            height:350px;
+        }
+        #SVGContainer {
+            display: none;
+            width: 100%;
+            height: 100%; /* PDFの表示領域の高さ */
+            border: 1px solid #ccc;
+        }
+        
+        #no{
+            font-size: 20px;
+        }
+        #buttonContainer {
+            text-align: center; /* ボタンを中央寄せ */
+            margin-top: 20px; /* 上部に余白を追加 */
+        }
+        h2{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2  font="9px" class="mb-4" id="count">アンケート入力フォーム </h1><span id="remainingTime"></span>
+        <div class="row">
+            <div class="col-md-6" height="600px">
+                <form id="surveyForm" novalidate>      
+                    <div class="form-group" id="no1">
+                        <label for="no">NO：</label>
+                        <input type="text" id="no" name="no" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="furigana-content">
+                        <label for="furigana">ふりがな：</label>
+                        <input type="text" id="furigana" name="furigana" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="namae-content">
+                        <label for="namae">氏名：</label>
+                        <input type="text" id="namae" name="namae" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="postal_code-content">
+                        <label for="postal_code">郵便番号：</label>
+                        <input type="text" id="postal_code" name="postal_code" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="address-content">
+                        <label for="address">住所：</label>
+                        <input type="text" id="address" name="address" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="phone-content">
+                        <label for="phone">電話番号：</label>
+                        <input type="text" id="phone" name="phone" class="form-control" required autocomplete="off">
+                    </div>
+                    <div class="form-group" id="email-content">
+                        <label for="email">E-mail：</label>
+                        <input type="text" id="email" name="email" class="form-control" autocomplete="off" required>
+                    </div>
+                    <hr>
+                    <div class="form-group" id="question1-content">
+                        <label for="question1">問１：</label>
+                        <select id="question1" name="question1" class="form-control" required>
+                            <option value="0">0.回答なし</option>
+                            <option value="1">1.インターネットで見て</option>
+                            <option value="2">2.スーパーのポスターを見て</option>
+                            <option value="3">3.市の広報誌を見て</option>
+                            <option value="4">4.学校から紹介されて</option>
+                            <option value="5">5.知人に紹介されて</option>
+                            <option value="6">6.その他</option>
+                            <!-- 他の選択肢も同様に記述 -->
+                        </select>
+                    </div>
+                    <div class="form-group" id="question2-content">
+                        <label for="question2">問２：</label>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input type="radio" id="option1" name="question2" value="1" class="form-check-input" required>
+                                    <label for="option1" class="form-check-label">1.とても良かった</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="option2" name="question2" value="2" class="form-check-input" required>
+                                    <label for="option2" class="form-check-label">2.良かった</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6" id="question3">
+                                <div class="form-check">
+                                    <input type="radio" id="option3" name="question2" value="3" class="form-check-input" required>
+                                    <label for="option3" class="form-check-label">3.あまり良くない</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" id="option4" name="question2" value="4" class="form-check-input" required>
+                                    <label for="option4" class="form-check-label">回答なし</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="question3">問３：</label>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input type="radio" id="optionYes" name="question3" value="1" class="form-check-input">
+                                    <label for="optionYes" class="form-check-label">1.はい</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-check">
+                                    <input type="radio" id="optionNo" name="question3" value="2" class="form-check-input">
+                                    <label for="optionNo" class="form-check-label">2.いいえ</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    <div class="container mt-5 text-center">
+                    <button type="submit" class="btn btn-primary">次に</button>
+                    <button type="button" onclick="stop()" class="btn btn-secondary" id="cancelButton">中止</button>
+                    </div>
+
+                </div>
+                </form>
+            </div margin="0,auto">
+            <div class="col-md-6">
+                <!-- 問題文やPDFの表示などを追加 -->
+                <div id="SVGContainer"> 
+                    <img id="SVGViewer" src="" width="100%" height="600px" frameborder="0"></img>
+                </div>
+            </div>
+        </div>
+        <div id="result"></div>
+    </div>
+
+    <div class="container mt-5 text-center">   
+        <form id="timeForm">
+            <h1 class="mb-4">時間設定</h1>
+            <p>入力可能な時間を設定してください。</p>
+            <div class="form-group d-inline-block">
+                <label for="timeInputMinute" class="mr-2">入力可能な時間：</label>
+                <input type="number" id="timeInputMinute" name="timeInputMinute" class="form-control text-center" min="1" required style="width: 150px;">
+                <span class="ml-2">分</span>
+            </div>
+            <div>
+            <button type="submit" class="btn btn-primary mt-3">スタート</button>
+            </div>
+            <div>
+                <label for="myCheckbox" class="mr-2" font-size="12px">ランダム</label>
+                <input type="checkbox" id="myCheckbox">
+            </div>
+
+
+        </form>
+        <div id="remainingTime"></div>
+        
+        <div class="container mt-5 text-center" id="kekka">        
+            
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

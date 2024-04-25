@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>顧客伝票チェック</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     
+        <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        #kekka {
+            display: none;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #kekka h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #kekka p {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        #kekka .form-group {
+            margin-top: 20px;
+        }
+        #kekka button {
+
+            margin-top: 20px;
+        }
+        h2{
+                text-align: center;
+            }
+            .label{
+                text-align: center;
+            }
+            .form-group {
+                margin-bottom: 0.7rem;
+            }
+            .form-group label {
+                display: inline-block;
+                width: 120px; /* ラベルの幅を調整 */
+                font-size: 15px;
+            }
+            .form-control {
+                display: inline-block;
+                width: calc(100% - 160px); /* フォームコントロールの幅を調整 */
+                vertical-align: top;
+            }
+            #surveyForm {
+                display:none; /* 最初は非表示 */
+                height:500px;
+            }
+            #SVGContainer {
+                display:none;
+                width: 100%;
+                height: 100%; /* PDFの表示領域の高さ */
+                border: 1px solid #ccc;
+            }
+            #remainingTime{
+                font-size:30px;
+                margin:0,0,0,0
+            }
+            .form-group #ID {
+                font-size: 40px; /* フォントサイズを変更 */
+             }
+             button{
+                margin:0,auto;
+             }        
+             #buttonContainer {
+            text-align: center; /* ボタンを中央寄せ */
+            margin-top: 20px; /* 上部に余白を追加 */
+        }
+            #timeform{
+                font-size: 12px;
+            }
+             
+        </style>
+    </head>    
+    <body>
+        
+        <div class="container mt-5">
+            <h2 font="9px" class="mb-4" id="count">顧客伝票チェック </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <form id="surveyForm">      
+                        <div class="form-group" id="ID">
+                            <span class="custom-text-style"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="code1">顧客コード</label>
+                            <input type="text" id="code1" name="code1" class="form-control" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="code2">商品コード</label>
+                            <input type="text" id="code2" name="code2" class="form-control" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="denwa">電話番号：</label>
+                            <input type="text" id="denwa" name="denwa" class="form-control" required autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス：</label>
+                            <input type="text" id="email" name="email" class="form-control" required autocomplete="off">
+                        </div>
+                        <div class="container mt-5 text-center">
+                        <button type="submit" class="btn btn-primary">次に</button>
+                        <button type="button" onclick="stop()" class="btn btn-secondary" id="cancelButton">中止</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                        <!-- 問題文やPDFの表示などを追加 -->
+                        <div id="SVGContainer">
+                            <img id="SVGViewer" src="" width="100%" height="100%" frameborder="0"></img>
+                        </div>
+                    </div>
+            </div>
+        </div> 
+    <div class="container mt-5 text-center">   
+            <form id="timeForm">
+                <h1 class="mb-4">時間設定</h1>
+                <p>入力可能な時間を設定してください。</p>
+                <div class="form-group d-inline-block">
+                    <label for="timeInput" class="mr-2" font-size="12px">入力可能な時間：</label>
+                    <input type="number" id="timeInputMinute" name="timeInputMinute" class="form-control text-center" min="1" required style="width: 150px;">
+                    <span class="ml-2">分</span>
+                </div>
+    
+                <div>
+                <button type="submit" class="btn btn-primary mt-3">スタート</button>
+                </div>
+                <div>
+                    <label for="timeInput" class="mr-2" font-size="12px">ランダム</label>
+                    <input type="checkbox" id="myCheckbox">
+                    </div>
+    
+            </form>
+            <div id="remainingTime"></div>
+    </div>
+            <div class="container mt-5 text-center" id="kekka">   
+                
+                    <div>
+                    <button type="submit" class="btn btn-primary mt-3">スタート</button>
+                    </div>
+        
+                </form>
+        </div>
+           
+    </body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="input_text2_script.js"></script>
+</html>

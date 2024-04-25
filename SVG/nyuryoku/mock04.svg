@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 419.53 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #231815;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: #231815;
+      }
+
+      .cls-5 {
+        letter-spacing: .25em;
+      }
+
+      .cls-3 {
+        font-size: 24px;
+      }
+
+      .cls-3, .cls-4 {
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+      }
+
+      .cls-4 {
+        font-size: 12px;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(149.76 48.92)"><tspan x="0" y="0">アンケート</tspan></text>
+  <text class="cls-4" transform="translate(55.5 89.76)"><tspan x="0" y="0">ふりがな</tspan></text>
+  <text class="cls-4" transform="translate(79.5 108.82)"><tspan x="0" y="0">氏名</tspan></text>
+  <text class="cls-4" transform="translate(55.5 137.12)"><tspan x="0" y="0">郵便番号</tspan></text>
+  <text class="cls-4" transform="translate(79.5 153.93)"><tspan x="0" y="0">住所</tspan></text>
+  <text class="cls-4" transform="translate(55.5 175.81)"><tspan x="0" y="0">電話番号</tspan></text>
+  <text class="cls-4" transform="translate(67.5 191.98)"><tspan x="0" y="0">メール</tspan></text>
+  <text class="cls-4" transform="translate(56.38 222.01)"><tspan x="0" y="0">問１　あなたはこの本を何でお知りになりましたか。</tspan></text>
+  <text class="cls-4" transform="translate(75.22 251.29)"><tspan x="0" y="0">１　書店で実物をみて</tspan></text>
+  <text class="cls-4" transform="translate(234.52 251.29)"><tspan x="0" y="0">２　チラシを見て</tspan></text>
+  <text class="cls-4" transform="translate(75.22 268.08)"><tspan x="0" y="0">３　書店店員に紹介されて</tspan></text>
+  <text class="cls-4" transform="translate(234.52 268.08)"><tspan x="0" y="0">４　学校から紹介されて</tspan></text>
+  <text class="cls-4" transform="translate(75.22 284.99)"><tspan x="0" y="0">５　知人に紹介されて</tspan></text>
+  <text class="cls-4" transform="translate(234.52 284.98)"><tspan x="0" y="0">６　その他</tspan></text>
+  <text class="cls-4" transform="translate(56.38 318.81)"><tspan x="0" y="0">問２　あなたはこの本を何でお知りになりましたか。</tspan></text>
+  <text class="cls-4" transform="translate(75.22 347.99)"><tspan x="0" y="0">１　役に立った</tspan></text>
+  <text class="cls-4" transform="translate(194.06 347.99)"><tspan x="0" y="0">２　ふつう</tspan></text>
+  <text class="cls-4" transform="translate(75.22 366.41)"><tspan x="0" y="0">３　期待はずれだった</tspan></text>
+  <text class="cls-4" transform="translate(56.38 399.14)"><tspan x="0" y="0">問３　あなたは弊社のカタログの送付をご希望されますか。</tspan></text>
+  <text class="cls-4" transform="translate(75.22 427.77)"><tspan x="0" y="0">□希望する</tspan></text>
+  <text class="cls-4" transform="translate(224.93 427.77)"><tspan x="0" y="0">□希望しない</tspan></text>
+  <text class="cls-4" transform="translate(131.02 89.76)"><tspan x="0" y="0">ほんのうじがへん</tspan></text>
+  <text class="cls-4" transform="translate(131.02 108.82)"><tspan x="0" y="0">本能寺が変</tspan></text>
+  <text class="cls-4" transform="translate(133.81 137.12)"><tspan x="0" y="0">604-8091</tspan></text>
+  <text class="cls-4" transform="translate(133.81 154.86)"><tspan x="0" y="0">京都府京都市中京区下本能寺前</tspan><tspan class="cls-5" x="168" y="0">町</tspan><tspan x="183" y="0">522</tspan></text>
+  <text class="cls-4" transform="translate(133.81 175.94)"><tspan x="0" y="0">075-231-5335</tspan></text>
+  <text class="cls-4" transform="translate(133.81 191.98)"><tspan x="0" y="0">hen@honnouji.co.jp</tspan></text>
+  <circle class="cls-1" cx="204.7" cy="343.37" r="11.49"/>
+  <path class="cls-2" d="M221.19,427.16c0-.07.07-.52.65-.52.72,0,1.08.4,1.31.65.4.41,1.15,1.26,1.4,1.46.05.04.07.07.11.07s.07-.04.13-.11c.52-.76,1.44-2.14,2.36-3.46,1.26-1.8,2.67-3.66,3.02-4.09.36-.43.32-.59.95-.68.13-.02.25-.04.34-.04.4,0,.41.2.41.38,0,.22-.22.32-.4.49-.83.85-2.29,2.84-3.46,4.61-.88,1.33-1.75,2.84-1.96,4.23-.07.5-.27.83-.72.83s-.88-.22-1.15-.41c-.34-.25-.38-.34-.63-.7-.38-.54-.92-1.08-2.18-2.34-.13-.13-.2-.23-.2-.36Z"/>
+  <circle class="cls-1" cx="82.84" cy="286.45" r="11.49"/>
+</svg>

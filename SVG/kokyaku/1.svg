@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 841.89 595.28">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: .2em;
+      }
+
+      .cls-2 {
+        letter-spacing: .7em;
+      }
+
+      .cls-3, .cls-4 {
+        letter-spacing: .2em;
+      }
+
+      .cls-5 {
+        letter-spacing: 1.34em;
+      }
+
+      .cls-6 {
+        font-family: KozGoPr6N-Bold-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 70px;
+        font-weight: 700;
+      }
+
+      .cls-6, .cls-7, .cls-4 {
+        fill: #231815;
+      }
+
+      .cls-7, .cls-4 {
+        font-family: KozGoPr6N-Regular-90ms-RKSJ-H, 'Kozuka Gothic Pr6N';
+        font-size: 36px;
+      }
+
+      .cls-8 {
+        letter-spacing: .5em;
+      }
+
+      .cls-9 {
+        letter-spacing: .84em;
+      }
+
+      .cls-10 {
+        letter-spacing: .6em;
+      }
+
+      .cls-11 {
+        letter-spacing: .2em;
+      }
+    </style>
+  </defs>
+  <text class="cls-6" transform="translate(228.02 118.56)"><tspan class="cls-8" x="0" y="0">顧客伝</tspan><tspan class="cls-11" x="315.86" y="0">票</tspan></text>
+  <text/>
+  <text class="cls-7" transform="translate(31.03 231.73)"><tspan class="cls-1" x="0" y="0">顧客コー</tspan><tspan class="cls-2" x="173.28" y="0">ド</tspan><tspan class="cls-3" x="234.48" y="0">:</tspan></text>
+  <text class="cls-7" transform="translate(31.03 307.85)"><tspan class="cls-1" x="0" y="0">商品コー</tspan><tspan class="cls-2" x="173.28" y="0">ド</tspan><tspan class="cls-3" x="234.48" y="0">:</tspan></text>
+  <text class="cls-7" transform="translate(31.03 383.97)"><tspan class="cls-10" x="0" y="0">電話番</tspan><tspan class="cls-2" x="173.28" y="0">号</tspan><tspan class="cls-3" x="234.48" y="0">:</tspan></text>
+  <text class="cls-7" transform="translate(31.03 460.09)"><tspan class="cls-5" x="0" y="0">メー</tspan><tspan class="cls-9" x="168.32" y="0">ル</tspan><tspan class="cls-3" x="234.48" y="0">:</tspan></text>
+  <text class="cls-4" transform="translate(317.31 231.73)"><tspan x="0" y="0">AB11CDE234</tspan></text>
+  <text class="cls-4" transform="translate(317.31 307.85)"><tspan x="0" y="0">PRE1247-RE9876W</tspan></text>
+  <text class="cls-4" transform="translate(317.31 383.97)"><tspan x="0" y="0">0488124046</tspan></text>
+  <text class="cls-4" transform="translate(317.31 460.09)"><tspan x="0" y="0">ge044@tupda.com</tspan></text>
+</svg>
